@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="createAccountForm" onsubmit="return handleSubmit()">
+    <label>First Name</label>
+    <input type="text" id="firstName" placeholder="Enter your first name" required />
+    <span class="error-msg" id="firstNameError"></span>
+
+    <label>Last Name</label>
+    <input type="text" id="lastName" placeholder="Enter your last name" required />
+    <span class="error-msg" id="lastNameError"></span>
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter your email address" required />
+    <span class="error-msg" id="emailError"></span>
+
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Create a password" required />
+    <span class="error-msg" id="passwordError"></span>
+
+    <label>Confirm Password</label>
+    <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+    <span class="error-msg" id="confirmPasswordError"></span>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob" required />
+    <span class="error-msg" id="dobError"></span>
+
+    <button type="submit">Submit</button>
+
+    <p id="errorMsg" class="error"></p>
+    <p id="successMsg" class="success"></p>
+  </form>
+
+  <script src="validation.js"></script>
+  <script src="space.js"></script>
+</body>
+</html>
